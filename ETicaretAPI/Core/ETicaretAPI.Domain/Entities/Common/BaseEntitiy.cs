@@ -8,7 +8,7 @@ namespace ETicaretAPI.Domain.Entities.Common
 {
     public class BaseEntitiy
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public DateTime CreatedDate { get; set; }
     }
 }

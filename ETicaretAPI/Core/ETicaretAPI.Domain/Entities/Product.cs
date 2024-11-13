@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ETicaretAPI.Domain.Entities.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace ETicaretAPI.Domain.Entities
 {
-    public class Product
+    public class Product : BaseEntitiy
     {
-        public Guid Id { get; set; }
-        public DateTime CreatedDate { get; set; }
+        public string Name { get; set; }
+        public int Stock { get; set; }
+        public long price { get; set; }
     }
 }
